@@ -1,0 +1,33 @@
+.box-foto {
+    position: relative;
+}
+
+.text-on {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-btn-color);
+    background: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 370px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.section-container {
+    padding-bottom: 86px;
+}
+
+.caption-foto {
+    display: flex;
+}
+
+.box-foto {
+    margin-right: 30px;
+}

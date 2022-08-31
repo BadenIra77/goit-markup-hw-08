@@ -1,0 +1,127 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.logo__web {
+    color: #2196F3;
+}
+
+.navigation__link,
+.navigation__link__st,
+.navigation__link__pf {
+    @include font (500, 14px, 1.14, 0.02em);
+    color: #000000;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: #2196F3;
+            }
+}
+
+.navigation__mail:hover .navigation__icon,
+.navigation__mail:focus .navigation__icon {
+    fill: #2196F3;
+}
+
+.navigation__tel:hover .navigation__icon,
+.navigation__tel:focus .navigation__icon {
+    fill: #2196F3;
+}
+.navigation__mail {
+    @include font (500, 14px, 1.14, 0.02em);
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: #2196F3;}
+}
+.navigation__tel {
+    @include font (500, 14px, 1.14, 0.02em);
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: #2196F3;
+        }
+}
+.navigation__icon {
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #757575;
+}
+
+.navigation__list {
+    display: flex;
+    margin-left: 93px;
+    .navigation__link.current {
+            color: #2196F3;
+        }
+    .navigation__item:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.navigation__address {
+    display: flex;
+    margin-left: auto;
+    .navigation__item:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.border {
+    border: 1px solid #ECECEC;
+}
+
+.navigation__link__st 
+{
+        position: relative;
+        &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                background: #2196F3;
+                position: absolute;
+                top: 43px;
+                display: none;
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+                &::after {
+                display: block;
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
+    }
+.navigation__link__pf {
+    position: relative;
+    &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: #2196F3;
+            position: absolute;
+            top: 43px;
+            display: none;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            &::after {
+                    display: block;
+                    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+}

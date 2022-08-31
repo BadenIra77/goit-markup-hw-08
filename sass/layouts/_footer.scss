@@ -1,0 +1,150 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background: #2F303A;
+}
+
+.portfolio-footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background: #2F303A;
+}
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--title-btn-color);
+}
+
+.adress-block {
+    padding-top: 20px;
+
+}
+
+.footer-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-btn-color);
+    background: #2F303A;
+    margin-bottom: 9px;
+}
+
+.footer-mail {
+    display: block;
+}
+
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background: #2F303A;
+
+}
+
+.footer-mail {
+    margin-bottom: 9px;
+}
+
+.port-button {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.right-big {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-btn-color);
+
+    margin-bottom: 20px;
+}
+
+.footer-tab {
+    display: flex;
+}
+
+.footer-right {
+    padding-left: 70px;
+    padding-bottom: 97px;
+    gap: 10px;
+}
+
+.footer-soc-icon {
+    fill: var(--title-btn-color);
+}
+
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+    }
+}
+
+.online-input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: transparent;
+    color: var(--title-btn-color);
+    padding-left: 16px;
+    &::placeholder {
+            font-size: 16px;
+            line-height: 1.25px;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.footer-button {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--title-btn-color);
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #EEEEEE;
+    margin-left: 10px;
+}
+
+.footer-send1 {
+    margin-left: auto;
+}
+
+.footer-send {
+    display: flex;
+}
