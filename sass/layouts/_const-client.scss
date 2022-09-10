@@ -1,15 +1,27 @@
 .const {
-    display: flex;
-    align-items: center;
+   display: flex; 
+flex-wrap: wrap;
+    gap: 30px;
+}
+.const-li {
+    @include tablet {
+            flex-basis: calc((100% - 60px)/2);
+            margin-top: 30px;
+        }
+    
+        @include desk {
+            flex-basis: calc((100% - 90px)/4);
+    
+        }
+
     justify-content: center;
 }
-
 .const-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    align-items: center;
+align-items: center;
     justify-content: center;
     display: flex;
     margin-right: 30px;
@@ -21,7 +33,7 @@
 .const-client {
     padding-top: 94px;
     padding-bottom: 94px;
-
+   
 }
 
 .icon-const-client {
