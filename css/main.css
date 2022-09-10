@@ -120,7 +120,8 @@ body {
 }
 
 .navigation {
-  display: none;
+  display: flex;
+  align-items: center;
 }
 
 .navigation__link,
@@ -197,6 +198,18 @@ body {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__address {
+    display: block;
+    margin-left: 90px;
+  }
+}
+
+/*    display: flex;
+    margin-right: auto;
+       .navigation__item:not(:last-child) {
+            margin-right: 50px;
+        } */
 .navigation__address {
   display: flex;
   margin-left: auto;
@@ -205,13 +218,15 @@ body {
   margin-right: 50px;
 }
 
-.address {
-  flex-direction: column;
-}
-
 .navigation {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .border {
