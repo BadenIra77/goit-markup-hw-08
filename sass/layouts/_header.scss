@@ -113,13 +113,19 @@ margin-left: auto;
             margin-right: 50px;
         } */
 .navigation__address {
-    display: flex;
-    margin-left: auto;
+    display: flex; 
+@include tablet {
+        display: block;
+        margin-left: auto;
+    }
+@include desk {display: flex; }
     .navigation__item:not(:last-child) {
             margin-right: 50px;
         }
 }
-
+.address {  margin-left: auto; 
+@include tablet {display: inline-flex;}
+@include desk {margin-right: auto; }}
 .navigation {
     display: none;
     @include tablet {

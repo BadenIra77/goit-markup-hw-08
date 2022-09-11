@@ -1,6 +1,6 @@
-.box-foto {
+ .box-foto {
     position: relative;
-}
+} 
 
 .text-on {
     font-weight: 700;
@@ -18,7 +18,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-}
+} 
 
 .section-container {
     padding-bottom: 86px;
@@ -26,8 +26,18 @@
 
 .caption-foto {
     display: flex;
-}
+ }
 
-.box-foto {
+ .box-foto {
     margin-right: 30px;
+} 
+.section-container {
+@media screen and (min-width: 320px) {display: none;}
+@include mobile {
+    display: none;
+}
+@include tablet {
+    display: none;
+}
+@include desk {display: block;}
 }

@@ -1,6 +1,7 @@
 .footer {
     padding-top: 60px;
-    padding-bottom: 60px;
+    @include mobile {padding-bottom: 60px;}
+    @include tablet {padding-bottom: 60px;}
     background: #2F303A;
 }
 
@@ -28,7 +29,11 @@
 text-align: center;
 padding-top: 20px;
 padding-bottom: 60px;
-@include desk{ text-align: left; }
+@include tablet {margin-left: 60px; padding-bottom: 60px;}
+@include desk {
+    margin-left: auto;
+    text-align: left;
+}
 }
 
 .footer-address {
@@ -66,8 +71,14 @@ padding-bottom: 60px;
 }
 
 .port-button {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include tablet {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    @include desk { padding-top: 72px;
+        padding-bottom: 72px; }
 }
 
 .right-big {
@@ -81,15 +92,14 @@ padding-bottom: 60px;
     text-align: center;
 
 }
-.right-big{
- /*   @include mobile {
-margin-top: 60px;
-    } */
+.right-big {
+   @include desk {
+text-align: left;
+    } 
 }
 
 .footer-tab {
-    @include desk {display: inline-flex;
-    justify-content: flex-start;}
+    @include desk {display: flex;}
     @include tablet {display: flex;}
 }
 .footer-tablet {
@@ -103,8 +113,8 @@ margin-top: 60px;
     padding-bottom: 97px; */
     padding-bottom: 60px;
     gap: 10px;
-    @include tablet {margin-left: auto;}
-
+    @include tablet {padding-left: 165px;}
+    @include desk {padding-left: 70px;}
 }
 
 .footer-soc-icon {
@@ -187,8 +197,10 @@ margin-top: 60px;
 .footer-send1 {
     margin-left: auto;
 }
-
 .footer-send {
-
-   /* display: flex; */
+@include desk {display: flex; }
 }
+.proba {
+@include desk  { display: flex;}
+}
+.online-form {@include desk {margin-right: 12px;}}

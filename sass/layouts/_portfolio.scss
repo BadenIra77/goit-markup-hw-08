@@ -55,7 +55,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    gap: 8px;
+    gap: 8px; 
+    @include mobile {justify-content: left; }
 }
 
 .portfolio-block {
