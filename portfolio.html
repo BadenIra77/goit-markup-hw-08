@@ -88,6 +88,7 @@
     <h1 class="visually-hidden">портфолио</h1>
 <section class="port-button">
     <div class="container">
+<div class="port-but">
 <ul class="first-button list">
 <li class="rst-button"><button type="button" class="portfolio-button">Усі</button></li>
 <li class="rst-button"><button type="button" class="portfolio-button">Веб-сайти</button></li>
@@ -95,31 +96,72 @@
 <li class="rst-button"><button type="button" class="portfolio-button">Дизайн</button></li>
 <li class="rst-button"><button type="button" class="portfolio-button">Маркетинг</button></li>
 </ul>
+</div>
         <ul class="portfolio-list list">
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/desktop.jpg" alt="фото ноутбука" width="370" height="294">
-                <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source
+                        srcset="./portfolioimg/desktop.jpg 1x,
+                        ./portfolioimg/desktop-desk-2x.jpg 2x"
+                        media="(min-width:1200px)" />
+                        <source 
+                        srcset="./portfolioimg/desktop-tablet.jpg 1x,
+                                ./portfolioimg/desktop-tablet-2x.jpg 2x" 
+                        media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/desktop-mob.jpg 1x,
+                                ./portfolioimg/desktop-mob-2x.jpg 2x" 
+                                media="(max-width:767px)" />
+                                <img src="./portfolioimg/desktop-mob.jpg" alt="фото ноутбука" width="450" height="294">
+                    </picture>
+                   <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 <div class="port-subtitle"><h3 class="portfolio-subtitle">Технокряк</h3> 
                 <p class="portfolio-text">Веб-сайт</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/poster.jpg" alt="фото постера" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/poster.jpg 1x,
+                                            ./portfolioimg/poster-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/poster-tablet.jpg 1x,
+                                                    ./portfolioimg/poster-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/poster-mob.jpg 1x,
+                                                    ./portfolioimg/poster-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/poster-mob.jpg" alt="фото постера" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p></div>
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
                 <div class="port-subtitle"><h3 class="portfolio-subtitle">Постер New Orlean vs Golden Star</h3>
                 <p class="portfolio-text">Дизайн</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/seafood.jpg" alt="фото упаковки" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/seafood.jpg 1x,
+                                            ./portfolioimg/seafood-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/seafood-tablet.jpg 1x,
+                                                    ./portfolioimg/seafood-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/seafood-mob.jpg 1x,
+                                                    ./portfolioimg/seafood-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/seafood-mob.jpg" alt="фото ємблема" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p></div>
                 <div class="port-subtitle"><h3 class="portfolio-subtitle">Ресторан Seafood</h3>
                 <p class="portfolio-text">Додаток</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/headphones.jpg" alt="фото наушников" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/headphones.jpg 1x,
+                                            ./portfolioimg/headphones-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/headphones-tablet.jpg 1x,
+                                                    ./portfolioimg/headphones-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/headphones-mob.jpg 1x,
+                                                    ./portfolioimg/headphones-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/headphones-mob.jpg" alt="фото навушників" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -127,7 +169,16 @@
                     <div class="port-subtitle"><h3 class="portfolio-subtitle">Проект Prime</h3>
                 <p class="portfolio-text">Маркетинг</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/boxes.jpg" alt="фото коробочек" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/boxes.jpg 1x,
+                                            ./portfolioimg/boxes-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/boxes-tablet.jpg 1x,
+                                                    ./portfolioimg/boxes-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/boxes-mob.jpg 1x,
+                                                    ./portfolioimg/boxes-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/boxes-mob.jpg" alt="фото коробок" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -135,7 +186,16 @@
                     <div class="port-subtitle"><h3 class="portfolio-subtitle">Проект Boxes</h3>
                 <p class="portfolio-text">Додаток</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/monitor.jpg" alt="фото монитора" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/monitor.jpg 1x,
+                                            ./portfolioimg/monitor-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/monitor-tablet.jpg 1x,
+                                                    ./portfolioimg/monitor-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/monitor-mob.jpg 1x,
+                                                    ./portfolioimg/monitor-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/monitor-mob.jpg" alt="фото монітора" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -146,7 +206,16 @@
                 </div>
             </li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/book.jpg" alt="фото книги" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/book.jpg 1x,
+                                            ./portfolioimg/book-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/book-tablet.jpg 1x,
+                                                    ./portfolioimg/book-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/book-mob.jpg 1x,
+                                                    ./portfolioimg/book-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/book-mob.jpg" alt="фото книги" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -154,7 +223,16 @@
                     <div class="port-subtitle"><h3 class="portfolio-subtitle">Издание Limited Edition</h3>
                 <p class="portfolio-text">Дизайн</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/labeltag.jpg" alt="фото бирки" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/labeltag.jpg 1x,
+                                                                ./portfolioimg/labeltag-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/labeltag-tablet.jpg 1x,
+                                                                        ./portfolioimg/labeltag-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/labeltag-mob.jpg 1x,
+                                                                        ./portfolioimg/labeltag-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/labeltag-mob.jpg" alt="фото бірки" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -162,7 +240,16 @@
                     <div class="port-subtitle"><h3 class="portfolio-subtitle">Проект LAB</h3>
                 <p class="portfolio-text">Маркетинг</p></div></li>
             <li class="portfolio-block">
-                <div class="portfolio-block-wrap"><img src="./portfolioimg/work.jpg" alt="фото проекта" width="370" height="294">
+                <div class="portfolio-block-wrap">
+                    <picture>
+                        <source srcset="./portfolioimg/work.jpg 1x,
+                                            ./portfolioimg/work-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./portfolioimg/work-tablet.jpg 1x,
+                                                    ./portfolioimg/work-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./portfolioimg/work-mob.jpg 1x,
+                                                    ./portfolioimg/work-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./portfolioimg/work-mob.jpg" alt="фото ноутбука" width="450" height="294">
+                    </picture>
                 <p class="swimm-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -176,8 +263,8 @@
 </main>
 <footer class="portfolio-footer">
     <div class="container">
+        <div class="proba">
         <div class="footer-tab">
-            <div class="proba">
             <section class="footer-left">
     <a href="" class="logo-footer link"><span class="logo__web">Web</span>Studio</a>
     <address>

@@ -29,7 +29,7 @@
                 <li class="navigation__item"> <a href="./portfolio.html" class="navigation__link link">Портфоліо</a></li>
                 <li class="navigation__item"> <a href="" class="navigation__link link">Контакти</a></li>
             </ul>
-            <div class="address">
+        <!--  <div class="address"> !-->
            <ul class="navigation__address list">
             <li class="navigation__item">
                 <a href= "info@devstudio.com" class="navigation__mail link"><svg class="navigation__icon" width="16" height="12">
@@ -40,7 +40,7 @@
                     <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a> </li>
            </ul> 
-        </div>
+    <!--  </div> !-->
         </nav>
         <!-- <div class="mobile">
            <a href="" class="logo link"><span class="logo__web">Web</span>Studio</a> 
@@ -143,11 +143,26 @@
             <div class="container">
             <h2 class="caption">Чим ми займаємося</h2>
              <ul class="caption-foto list">
-                <li class="box-foto"><div><img src="./images/box1.jpg" alt="фото cхема" width="370" height="294">
+                <li class="box-foto"><div>
+                    <picture>
+                        <source srcset="./images/box1.jpg 1x,
+                        ./images/box1-2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/box1.jpg" alt="фото cхема" width="370" height="294">
+                    </picture>
                 <p class="text-on">Десктопні додатки</p></div></li>
-                <li class="box-foto"><div><img src="./images/box2.jpg" alt="фото проєкция" width="370" height="294">
+                <li class="box-foto"><div>
+                    <picture>
+                        <source srcset="./images/box2.jpg 1x,
+                                            ./images/box2-2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/box2.jpg" alt="фото cхема" width="370" height="294">
+                    </picture>
                 <p class="text-on">Мобільні додатки</p></div></li>
-                <li class="box-foto"><div><img src="./images/box3.jpg" alt="фото планшет сота" width="370" height="294">
+                <li class="box-foto"><div>
+                    <picture>
+                        <source srcset="./images/box3.jpg 1x,
+                            ./images/box3-2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/box3.jpg" alt="фото cхема" width="370" height="294">
+                    </picture>
                 <p class="text-on">Дизайнерські рішення</p></div></li>
             </ul>
             </div>
@@ -156,7 +171,16 @@
             <div class="container">
             <h2 class="caption">Наша команда</h2>
             <ul class="section-team-foto list">
-                <li class="team-foto"> <img src="./images/demyanenko.jpg" alt="Фото специалиста" width="270" height="260">
+                <li class="team-foto"> 
+                    <picture>
+                        <source srcset="./images/demyanenko.jpg 1x,
+                                        ./images/demyanenko-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/demyanenko-tablet.jpg 1x,
+                                        ./images/demyanenko-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/demyanenko-mob.jpg 1x,
+                                        ./images/demyanenko-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./images/demyanenko-mob.jpg" alt="фото cпеца" width="450" height="460">
+                    </picture>
                     <div class="caption-block"><h3 class="caption-name">Ігор Дем'яненко</h3>
                     <p class="caption-work">Product Designer</p>
                 <ul class="caption-soc list">
@@ -187,7 +211,16 @@
                     </li>
                 </ul></div>
                 </li>
-                <li class="team-foto"> <img src="./images/repina.jpg" alt="Фото специалиста" width="270" height="260">
+                <li class="team-foto">
+                    <picture>
+                        <source srcset="./images/repina.jpg 1x,
+                                        ./images/repina-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/repina-tablet.jpg 1x,
+                                        ./images/repina-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/repina-mob.jpg 1x,
+                                        ./images/repina-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./images/repina-mob.jpg" alt="фото cпеца" width="450" height="460">
+                    </picture>
                     <div class="caption-block"><h3 class="caption-name">Ольга Рєпіна</h3>
                     <p class="caption-work">Frontend Developer</p>
                 <ul class="caption-soc list">
@@ -219,7 +252,16 @@
                 </ul></div>
                 </li>
 
-                <li class="team-foto"> <img src="./images/tarasov.jpg" alt="Фото специалиста" width="270" height="260">
+                <li class="team-foto"> 
+                    <picture>
+                        <source srcset="./images/tarasov.jpg 1x,
+                                        ./images/tarasov-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tarasov-tablet.jpg 1x,
+                                        ./images/tarasov-tablet-2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/tarasov-mob.jpg 1x,
+                                        ./images/tarasov-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./images/tarasov-mob.jpg" alt="фото cпеца" width="450" height="460">
+                    </picture>
                     <div class="caption-block"><h3 class="caption-name">Микола Тарасов </h3>
                     <p class="caption-work">Marketing</p>
                 <ul class="caption-soc list">
@@ -250,7 +292,17 @@
                     </li>
                 </ul> </div>
                 </li>
-                <li class="team-foto"> <img src="./images/yermakov.jpg" alt="Фото специалиста" width="270" height="260">
+                <li class="team-foto">
+                    <picture>
+                        <source srcset="./images/yermakov.jpg 1x,
+                                        ./images/yermakov-desk-2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/yermakov-tablet.jpg 1x,
+                                        ./images/yermakov-tablet-2x.jpg 2x"
+                            media="(min-width:768px)" />
+                        <source srcset="./images/yermakov-mob.jpg 1x,
+                                ./images/yermakov-mob-2x.jpg 2x" media="(max-width:767px)" />
+                        <img src="./images/yermakov-mob.jpg" alt="фото cпеца" width="450" height="460">
+                    </picture>
                 <div class="caption-block"><h3 class="caption-name">Михайло Єрмаков </h3>
                 <p class="caption-work">UI Designer</p>
             <ul class="caption-soc list">

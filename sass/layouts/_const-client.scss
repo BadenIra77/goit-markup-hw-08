@@ -6,7 +6,7 @@ flex-wrap: wrap;
 .const-li {
     @include tablet {
             flex-basis: calc((100% - 60px)/3);
-            margin-top: 30px;
+          /*  margin-top: 30px; */
         }
     
         @include desk {

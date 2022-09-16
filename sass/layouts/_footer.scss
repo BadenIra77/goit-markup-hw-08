@@ -1,13 +1,14 @@
 .footer {
     padding-top: 60px;
-    @include mobile {padding-bottom: 60px;}
-    @include tablet {padding-bottom: 60px;}
+    padding-bottom: 60px;
+ /*   @include mobile {padding-bottom: 60px;}
+    @include tablet {padding-bottom: 60px;} */
     background: #2F303A;
 }
 
 .portfolio-footer {
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 
@@ -28,8 +29,8 @@
 .adress-block {
 text-align: center;
 padding-top: 20px;
-padding-bottom: 60px;
-@include tablet {margin-left: 60px; padding-bottom: 60px;}
+/*padding-bottom: 60px; */
+@include tablet {margin-left: 60px; /* padding-bottom: 60px; */}
 @include desk {
     margin-left: auto;
     text-align: left;
@@ -110,11 +111,14 @@ text-align: left;
 .footer-right {
 
  /*   padding-left: 70px; 
-    padding-bottom: 97px; */
-    padding-bottom: 60px;
+    padding-bottom: 97px; 
+    padding-bottom: 60px; */
+    padding-top: 60px;
     gap: 10px;
-    @include tablet {padding-left: 165px;}
-    @include desk {padding-left: 70px;}
+    @include mobile { padding-top: 60px;
+    padding-bottom: 60px;}
+    @include tablet {padding-left: 165px; padding-bottom: 120px; padding-top: 0px;}
+    @include desk {padding-left: 70px; padding-top: 0px; padding-bottom: 0px; }
 }
 
 .footer-soc-icon {

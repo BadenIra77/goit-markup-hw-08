@@ -65,7 +65,8 @@ margin-left: auto;
     fill: #2196F3;
 }
 .navigation__mail {
-    @include font (500, 14px, 1.14, 0.02em);
+    @include tablet { @include font (500, 12px, 1.14, 0.02em);}
+    @include desk { @include font (500, 14px, 1.14, 0.02em);}
     color: var(--main-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
@@ -73,7 +74,13 @@ margin-left: auto;
             color: #2196F3;}
 }
 .navigation__tel {
-    @include font (500, 14px, 1.14, 0.02em);
+    @include tablet {
+            @include font (500, 12px, 1.14, 0.02em);
+        }
+    
+        @include desk {
+            @include font (500, 14px, 1.14, 0.02em);
+        }
     color: var(--main-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
@@ -89,10 +96,11 @@ margin-left: auto;
 
 .navigation__list {
     display: flex;
-    margin-left: 93px;
+  
     @include tablet {
-    margin-left: 87px;
+    margin-left: 87px; 
     }
+    @include desk {margin-left: 93px;}
 
     .navigation__link.current {
             color: #2196F3;
@@ -114,6 +122,7 @@ margin-left: auto;
         } */
 .navigation__address {
     display: flex; 
+    margin-left: auto;
 @include tablet {
         display: block;
         margin-left: auto;
@@ -125,7 +134,7 @@ margin-left: auto;
 }
 .address {  margin-left: auto; 
 @include tablet {display: inline-flex;}
-@include desk {margin-right: auto; }}
+@include desk { margin-right: auto; }}
 .navigation {
     display: none;
     @include tablet {

@@ -29,7 +29,7 @@
     
   /*  display: flex; */
     .skills__text {
-            margin-top: 30px;
+        /*   margin-top: 30px;*/
         }
 }
 .skills__text {
@@ -37,7 +37,7 @@
   width: 100%;
 @include tablet {
     flex-basis: calc((100% - 60px)/2); 
-    margin-top: 30px;
+/*    margin-top: 30px; */
 }
 @include desk {
     width: 1200px;

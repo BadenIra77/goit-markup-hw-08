@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .portfolio-subtitle {
@@ -58,7 +59,14 @@
     gap: 8px; 
     @include mobile {justify-content: left; }
 }
-
+.port-but {
+    display: flex;
+    @include mobile {
+   max-width: 350px;
+   height: 100px;
+   flex-wrap: wrap;
+    gap: 30px; }
+}
 .portfolio-block {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
@@ -93,7 +101,6 @@
 }
 
 .port-subtitle {
-
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;

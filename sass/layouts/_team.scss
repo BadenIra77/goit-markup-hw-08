@@ -1,17 +1,17 @@
 .section-team {
     background: #F5F4FA;
-    padding-top: 60px; 
+    padding-top: 60px;
     padding-bottom: 60px;
+    @include desk {
+    padding-top: 94px; 
+    padding-bottom: 94px; }
 }
 
 .team-foto {
     @include tablet {
-            flex-basis: calc((100% - 60px)/2);
-            margin-top: 30px;} 
+            flex-basis: calc((100% - 60px)/2);} 
     @include desk {
-            flex-basis: calc((100% - 90px)/4);
-           
-        }
+            flex-basis: calc((100% - 90px)/4);}
         }
 .section-team-foto {
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .caption-block {
-    padding-top: 30px;
+   padding-top: 30px; 
     padding-bottom: 24px;
 
     width: 100%;
@@ -44,6 +44,7 @@
     letter-spacing: 0.03em;
     color: var(--title-h2-3-color);
     margin-bottom: 30px;
+    @include desk {margin-bottom: 60px;}
 }
 
 .caption-name {
